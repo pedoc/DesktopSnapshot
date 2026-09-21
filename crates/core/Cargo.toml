@@ -1,0 +1,9 @@
+[package]
+name = "desktop-snapshot-core"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-only"
+description = "桌面项目快照与恢复的领域模型和差异计算"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }

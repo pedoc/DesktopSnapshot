@@ -1,0 +1,17 @@
+[package]
+name = "desktop-snapshot-ui"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-only"
+description = "DesktopSnapshot Tauri 图形界面"
+
+[build-dependencies]
+tauri-build = { version = "2.5.2", features = [] }
+
+[dependencies]
+desktop-snapshot-core = { path = "../../core" }
+desktop-snapshot-platform-windows = { path = "../../platform-windows" }
+desktop-snapshot-storage = { path = "../../storage" }
+serde = { version = "1.0", features = ["derive"] }
+base64 = "0.22.1"
+tauri = { version = "2.11.6", features = [] }

@@ -1,0 +1,25 @@
+[package]
+name = "desktop-snapshot-platform-windows"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-only"
+description = "DesktopSnapshot 的 Windows 桌面扫描与系统集成"
+
+[dependencies]
+desktop-snapshot-core = { path = "../core" }
+thiserror = "2.0"
+lnk = "0.6.4"
+screenshots = "0.8.10"
+windows = { version = "0.62.2", features = [
+    "Win32_Foundation",
+    "Win32_System_Com",
+    "Win32_System_Ole",
+    "Win32_System_Variant",
+    "Win32_System_TaskScheduler",
+    "Win32_System_LibraryLoader",
+    "Win32_UI_Shell",
+    "Win32_UI_Shell_Common",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_Storage_FileSystem",
+    "Win32_Graphics_Gdi",
+] }

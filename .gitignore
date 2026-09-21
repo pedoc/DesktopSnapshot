@@ -1,0 +1,19 @@
+# Rust build outputs
+/target/
+
+# Local IDE files
+.vscode/
+.idea/
+*.user
+*.suo
+
+# DesktopSnapshot local data
+*.db
+*.db-shm
+*.db-wal
+.runtime-test/
+# Local runtime smoke-test data
+.runtime-test/
+
+crates/ui/dist/
+crates/ui/node_modules/

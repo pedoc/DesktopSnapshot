@@ -1,0 +1,16 @@
+[package]
+name = "desktop-snapshot-cli"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-only"
+description = "DesktopSnapshot 无界面命令行工具"
+
+[[bin]]
+name = "desktop-snapshot"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.6", features = ["derive"] }
+desktop-snapshot-core = { path = "../core" }
+desktop-snapshot-platform-windows = { path = "../platform-windows" }
+desktop-snapshot-storage = { path = "../storage" }

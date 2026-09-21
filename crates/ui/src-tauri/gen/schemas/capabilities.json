@@ -1,15 +1,1 @@
-{
-    "main-capability": {
-        "identifier": "main-capability",
-        "description": "DesktopSnapshot 主窗口权限",
-        "local": true,
-        "windows": [
-            "main"
-        ],
-        "permissions": [
-            "core:default",
-            "core:window:allow-hide",
-            "core:window:allow-show"
-        ]
-    }
-}
+{"main-capability":{"identifier":"main-capability","description":"DesktopSnapshot 主窗口权限","local":true,"windows":["main"],"permissions":["core:default","core:window:allow-hide","core:window:allow-show"]}}

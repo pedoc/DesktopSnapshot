@@ -32,7 +32,7 @@ git push origin v0.1.0
 Workflow 会：
 
 1. 在 Windows runner 上构建 CLI 和 Tauri Windows 安装包；
-2. 打包 `desktop-snapshot.exe`、NSIS 安装包和 MSI 安装包；
+2. 同时打包可移植 ZIP、NSIS 安装包和 MSI 安装包；
 3. 附带 `README.md`、`LICENSE` 和第三方声明；
 4. 生成 `SHA256SUMS.txt`；
 5. 自动创建 GitHub Release 并上传 ZIP 包。

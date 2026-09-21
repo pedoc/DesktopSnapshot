@@ -2,6 +2,10 @@
 
 DesktopSnapshot 是一个面向 Windows 的本地桌面快照与恢复工具。
 
+<p align="center">
+  <img src="./docs/screenshots/ScreenShot_2026-09-21_214139_501.png" width="100%" />
+</p>
+
 项目目标是同时保存：
 
 - 桌面项目本身（快捷方式、网址、文件和文件夹）；
@@ -56,6 +60,22 @@ npm run tauri build --prefix crates/ui
 ```
 
 GUI 使用 Tauri + Vue 构建，图标通过 Tauri 配置嵌入 Windows 安装包；双击运行时不会额外打开 CMD 控制台窗口。
+
+### 构建可移植版本
+
+可执行文件和 CLI 会被打包到 ZIP 中，不需要安装程序：
+
+```powershell
+.\scripts\build-portable.ps1 -Version 0.1.0
+```
+
+输出位置：
+
+```text
+dist\DesktopSnapshot-v0.1.0-portable-windows-x64.zip
+```
+
+可移植版本依赖系统已有 WebView2 Runtime；如果目标电脑没有 WebView2，建议使用 NSIS 或 MSI 安装包。
 
 ## CLI 用法
 

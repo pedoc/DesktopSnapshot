@@ -17,3 +17,5 @@
 
 crates/ui/dist/
 crates/ui/node_modules/
+
+dist/
